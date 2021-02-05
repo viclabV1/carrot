@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Carrot</string>
+    <string name="welcome_message">This app exists to help you be less lazy. It does this by gameifying the setting and achieving of your goals. This does require some cooperation on your part.
+    However much you spend on things you do not need every week, put that aside, and do not touch it. For every goal and subgoal you achieve, more of this will become available to you. As you get better
+    at setting and achieving your goals, you will have the option to add more goals, and thus be able to spend more every week. For the first day, you will only be asked to set and achieve one goal.
+    If you do this, the next two days, you will be asked to set and achieve two goals. The next three days after that, three goals, and so on, up to six goals a day. This may not sound like a lot, but
+    each goal will be broken down into subgoals that you will set. </string>
+    <string name="welcome_header">Welcome to Carrot!</string>
+    <string name="begin">begin</string>
+    <string name="amount_prompt">How much did you put aside?</string>
+</resources>
