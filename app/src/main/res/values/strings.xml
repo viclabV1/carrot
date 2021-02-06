@@ -5,4 +5,9 @@
     <string name="begin">begin</string>
     <string name="amount_prompt">how much will you put aside?</string>
     <string name="amount_input">amount</string>
+    <string name="goal_header">goals</string>
+    <string name="earned_amount">amount earned</string>
+    <string name="setgoals">set your goals for today</string>
+    <string name="goal_amount_1">you can set </string>
+    <string name="goal_amount_2"> goals today</string>
 </resources>

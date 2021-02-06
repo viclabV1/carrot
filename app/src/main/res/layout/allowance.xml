@@ -16,4 +16,15 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="257dp" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        style="@style/input_hint"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/amount_input"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="372dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
