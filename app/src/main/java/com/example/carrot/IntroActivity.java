@@ -12,11 +12,13 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.introduction);
+
     }
 
     //called on button press after first time opening app
     public void firstOpen(View view){
-        Intent intent = new Intent(this, Allowance.class);
+        Intent intent = new Intent(this, RewardActivity.class);
         startActivity(intent);
     }
+
 }
