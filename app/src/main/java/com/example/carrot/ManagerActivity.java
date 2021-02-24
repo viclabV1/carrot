@@ -5,9 +5,10 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import com.example.carrot.GeneralManager;
 
-public class ManagerActitivity extends AppCompatActivity {
-
+public class ManagerActivity extends AppCompatActivity {
+    GeneralManager manager = new GeneralManager();
     @Override
     protected void onCreate(Bundle savedInstanceState){
 
@@ -15,13 +16,13 @@ public class ManagerActitivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
-        if(firstOpen){
+        if(!manager.getOpened()){
             openIntro();
         }
-        else if(newWeek){
+        else if(manager.getNewWeek()){
             openAllowance();
         }
-        else if(newDay){
+        else if(manager.getNewDay()){
             openGoalSetting();
         }
         else openGoals();
@@ -35,7 +36,15 @@ public class ManagerActitivity extends AppCompatActivity {
         Intent intent = new Intent(this, RewardActivity.class);
         startActivity(intent);
     }
-    private void openGoalSetting(){}
+
+
+    private void openGoalSetting(){
+        Intent intent = new Intent(this, GoalSettingActivity.class);
+        startActivity(intent);
+    }
+    public GeneralManager getManager(){
+        return manager;
+    }
     private void openGoals(){}
 
     private boolean firstOpen = true;

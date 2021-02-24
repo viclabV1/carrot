@@ -10,4 +10,6 @@
     <string name="setgoals">set your goals for today</string>
     <string name="goal_amount_1">you can set </string>
     <string name="goal_amount_2"> goals today</string>
+    <string name="generic_button">enter</string>
+    <string name="continue_button">continue</string>
 </resources>
