@@ -1,6 +1,8 @@
 package com.example.carrot;
+import android.database.sqlite.*;
 
 public class GeneralManager {
+
 
 
     public boolean getOpened(){
@@ -15,7 +17,6 @@ public class GeneralManager {
     public boolean getNewWeek(){
         return newWeek;
     }
-
     private boolean opened = false;
     private boolean newDay = true;
     private boolean newWeek = true;
