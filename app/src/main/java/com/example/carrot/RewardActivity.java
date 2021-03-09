@@ -13,6 +13,7 @@ public class RewardActivity extends AppCompatActivity {
         setContentView(R.layout.allowance);
     }
 
+    //Add set method for reward amount
 
 
 }

@@ -16,15 +16,22 @@ public class ManagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
+        //On open, open intro activity if app has not been opened before
         if(!manager.getOpened()){
             openIntro();
         }
+
+        //opens reward activity if start of new week
         else if(manager.getNewWeek()){
             openAllowance();
         }
+
+        //opens goal setting activity if new day
         else if(manager.getNewDay()){
             openGoalSetting();
         }
+
+        //otherwise opens the goal activity
         else openGoals();
     }
     private void openIntro(){
@@ -46,8 +53,10 @@ public class ManagerActivity extends AppCompatActivity {
         return manager;
     }
     private void openGoals(){}
-
+/*
     private boolean firstOpen = true;
     private boolean newWeek = true;
     private boolean newDay = true;
+*/
 }
+

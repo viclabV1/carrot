@@ -1,7 +1,7 @@
 package com.example.carrot;
 
 import java.util.ArrayList;
-
+//interim class until i better understand sqlite
 public class GoalHandler {
 
     public ArrayList<String> getGoals(){

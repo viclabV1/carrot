@@ -13,5 +13,8 @@ public class GoalSettingActivity extends AppCompatActivity {
         setContentView(R.layout.set_goals);
     }
 
+    //add goal-setting algorithm
+    //add setGoal method
+    //add setSubGoal method
 
 }

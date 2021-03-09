@@ -1,6 +1,6 @@
 package com.example.carrot;
 import android.database.sqlite.*;
-
+//backbone of app
 public class GeneralManager {
 
 

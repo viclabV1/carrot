@@ -14,12 +14,10 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.introduction);
 
     }
-
     //called on button press after first time opening app
     public void firstOpen(View view){
         Intent intent = new Intent(this, RewardActivity.class);
         startActivity(intent);
 
     }
-
 }
