@@ -18,11 +18,13 @@ public class ManagerActivity extends AppCompatActivity {
 
         //On open, open intro activity if app has not been opened before
         if(!manager.getOpened()){
+            manager.setOpened();
             openIntro();
         }
 
         //opens reward activity if start of new week
         else if(manager.getNewWeek()){
+
             openAllowance();
         }
 
@@ -52,7 +54,10 @@ public class ManagerActivity extends AppCompatActivity {
     public GeneralManager getManager(){
         return manager;
     }
-    private void openGoals(){}
+    private void openGoals(){
+        Intent intent = new Intent(this, GoalActivity.class);
+        startActivity(intent);
+    }
 /*
     private boolean firstOpen = true;
     private boolean newWeek = true;

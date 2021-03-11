@@ -17,7 +17,11 @@ public class GeneralManager {
     public boolean getNewWeek(){
         return newWeek;
     }
+
+    //has app been opened before?
     private boolean opened = false;
+    //is this the first time the app has been opened today?
     private boolean newDay = true;
+    //is this the first time the app has been opened this week?
     private boolean newWeek = true;
 }

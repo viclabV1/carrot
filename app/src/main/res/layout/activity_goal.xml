@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoalActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_goals_subgoals"
+        android:layout_width="116dp"
+        android:layout_height="299dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toEndOf="@id/rv_goals_goals
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goals_subgoalheader" />
+
+    <TextView
+        android:id="@+id/tv_goals_goalheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/tv_goals_subgoalheader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goals_amountearned" />
+
+    <TextView
+        android:id="@+id/tv_goals_amountheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_goals_goals"
+        android:layout_width="116dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/rv_goals_subgoals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goals_goalheader" />
+
+    <TextView
+        android:id="@+id/tv_goals_subgoalheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_goals_goalheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_goals_goalheader"
+        app:layout_constraintTop_toTopOf="@+id/tv_goals_goalheader" />
+
+    <TextView
+        android:id="@+id/tv_goals_amountearned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goals_amountheader" />
+</androidx.constraintlayout.widget.ConstraintLayout>

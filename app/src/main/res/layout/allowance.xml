@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_reward_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_reward_amount"
         style="@style/input_hint"
         android:layout_width="180dp"
         android:layout_height="44dp"
@@ -30,21 +30,20 @@
         android:text="@string/amount_input"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_reward_question"
+        app:layout_constraintVertical_bias="0.122" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bt_reward_enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="96dp"
+        android:onClick="setReward"
         android:text="@string/generic_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/et_reward_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintStart_toEndOf="@+id/et_reward_amount"
+        app:layout_constraintTop_toTopOf="@+id/et_reward_amount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

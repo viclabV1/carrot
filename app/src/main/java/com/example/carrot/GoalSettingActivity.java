@@ -1,7 +1,7 @@
 package com.example.carrot;
 
 import android.os.Bundle;
-
+import com.example.carrot.GoalHandler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GoalSettingActivity extends AppCompatActivity {
@@ -15,6 +15,10 @@ public class GoalSettingActivity extends AppCompatActivity {
 
     //add goal-setting algorithm
     //add setGoal method
-    //add setSubGoal method
+    public void addNewGoal(){
+        thisHandler.addGoal("");
+    }
 
+    //add setSubGoal method
+    GoalHandler thisHandler = new GoalHandler();
 }
